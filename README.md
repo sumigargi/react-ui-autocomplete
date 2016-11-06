@@ -1,12 +1,10 @@
-# ReactUI Autocomplete
+# React Controlled Autocomplete Component
 
-An autocomplete input component for ReactJS that behaves like the love child of an input field and a select box. [Demo](http://demo.gianmarcotoso.com/react-ui-autocomplete)
-
-_WARNING: This is in a very early stage of development!_
+An autocomplete input component for ReactJS that behaves like the love child of an input field and a select box. 
 
 <img src="./ui-autocomplete.png" alt="ReactUI Autocomplete" height="199px" />
 
-## Installation
+## Installing the Auto-Complete Component
 
 Add to your project with `npm install react-ui-autocomplete` and include it using `import UIAutocomplete from 'react-ui-autocomplete'`.
 
@@ -164,17 +162,3 @@ return (
 
 You can decide whether or not to require the user to press ENTER to confirm the new arbitrary value by setting the `newValueRequiresEnter` property. This property has no effect when `allowNew` is set to `false`, and its default value is `false`, so that `UIAutocomplete` behaves similarly to a regular input.
 
-## Contributing
-
-If you find that this thing breaks, you can open an issue and/or make a pull request. If you want to contribute, just pull the repository and make your modification. Don't forget to run the tests, and add your own where necessary!
-
-The following `npm` scripts are available:
-
-- `npm run build-dist`: creates a bundled version of the component, saving it to `dist`, using Webpack
-- `npm run build-dev`: creates a development version of the component, saving it to `dev`, using Webpack
-- `npm run demo`: runs a small demo application with WebpackDevServer. It's still in the works!
-- `npm test`: runs the tests
-
-## License
-
-MIT
