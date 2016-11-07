@@ -1,6 +1,6 @@
 # React Controlled Autocomplete Component
 
-An autocomplete input component for ReactJS that behaves like the love child of an input field and a select box. 
+An autocomplete input component for ReactJS that behaves as a input field and a select box. 
 
 <img src="./ui-autocomplete.png" alt="ReactUI Autocomplete" height="199px" />
 
@@ -92,13 +92,11 @@ There are three properties that you can set in order to customize how and when t
 
 ### Customizing appearance
 
-You'll probably want to tweak how the component looks. Other than setting a `className` for the whole component, you can also pass a specific class to be used for the internal input field by setting the `inputClassName` property. You can (and should) also override the CSS classes already used to render the rest of the component. To do so, you can define the following classes in your own CSS: `.ui-autocomplete`, `.ui-autocomplete-suggestions`, `.ui-autocomplete-suggestion-item`, `.ui-autocomplete-suggestion-item.suggestion-focus`.
+You'll probably want to tweak how the component looks. Other than setting a `className` for the whole component, you can also pass a specific class to be used for the internal input field by setting the `inputClassName` property. You can also override the CSS classes already used to render the rest of the component. To do so, you can define the following classes in your own CSS: `.ui-autocomplete`, `.ui-autocomplete-suggestions`, `.ui-autocomplete-suggestion-item`, `.ui-autocomplete-suggestion-item.suggestion-focus`.
 
-### Allowing arbitrary values (Experimental)
+### Allowing arbitrary values 
 
-**NOTE: This is far from being final and I'm considering its removal**
-
-If you don't want to limit the user input to the passed `options`, you can set to true the `allowNew` property. When using a simple string array, you don't have to do anything else:
+When using a simple string array, you don't have to do anything else:
 
 ```javascript
 // Somewhere in your code
@@ -160,5 +158,5 @@ return (
 )
 ```
 
-You can decide whether or not to require the user to press ENTER to confirm the new arbitrary value by setting the `newValueRequiresEnter` property. This property has no effect when `allowNew` is set to `false`, and its default value is `false`, so that `UIAutocomplete` behaves similarly to a regular input.
+The `newValueRequiresEnter` property has no effect when `allowNew` is set to `false`, and its default value is `false`, so that `UIAutocomplete` behaves similarly to a regular input.
 
